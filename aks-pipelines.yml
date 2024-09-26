@@ -11,17 +11,17 @@ variables:
   
 
 
-stages:
-  - stage: setup
-    displayName: 'Setup'
-    jobs:
-      - job: InstallTerraform
-        displayName: 'Install Terraform'
-        steps:
-          - task: JasonBJohnson.azure-pipelines-tasks-terraform.azure-pipelines-tasks-terraform-installer.TerraformInstaller@2
-            displayName: 'Install Terraform'
-            inputs:
-              terraformVersion: latest
+# stages:
+#   - stage: setup
+#     displayName: 'Setup'
+#     jobs:
+#       - job: InstallTerraform
+#         displayName: 'Install Terraform'
+#         steps:
+#           - task: JasonBJohnson.azure-pipelines-tasks-terraform.azure-pipelines-tasks-terraform-installer.TerraformInstaller@2
+#             displayName: 'Install Terraform'
+#             inputs:
+#               terraformVersion: latest
 
   - stage: terraformValidate
     displayName: 'Terraform Validation'
