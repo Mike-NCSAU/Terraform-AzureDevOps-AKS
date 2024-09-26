@@ -11,7 +11,7 @@ variables:
   
 
 
-stages:
+ stages:
 #   - stage: setup
 #     displayName: 'Setup'
 #     jobs:
