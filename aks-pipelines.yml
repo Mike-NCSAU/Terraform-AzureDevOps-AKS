@@ -10,7 +10,7 @@ variables:
     value: '$(System.DefaultWorkingDirectory)/terraform'  # Define working directory here
   
 
-
+/*
 stages:
   - stage: setup
     displayName: 'Setup'
@@ -21,7 +21,7 @@ stages:
           - task: JasonBJohnson.azure-pipelines-tasks-terraform.azure-pipelines-tasks-terraform-installer.TerraformInstaller@2
             displayName: 'Install Terraform'
             inputs:
-              terraformVersion: latest
+              terraformVersion: latest */
 
   - stage: terraformValidate
     displayName: 'Terraform Validation'
