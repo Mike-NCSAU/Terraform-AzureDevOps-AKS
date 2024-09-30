@@ -11,8 +11,8 @@ terraform {
     backend "azurerm" {
       # resource_group_name  = "DevOps-AKS"
       # storage_account_name = "mikedevopsaks"
-      # container_name       = "aks1"
-      # key                  = "aks1.tfstate"
+      # container_name       = "aks"
+      # key                  = "aks.tfstate"
     }
 }
 
